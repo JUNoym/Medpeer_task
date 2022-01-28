@@ -1,6 +1,6 @@
 class Api::V1::IdeasController < ApplicationController
 
-    def show
+    def index
         ideas = Idea.response_ideas(params[:category_name])
         render json: { data: ideas }
       rescue StandardError
@@ -14,5 +14,5 @@ class Api::V1::IdeasController < ApplicationController
       rescue StandardError
         render json: { status: 422 }
     end
-    
+
 end

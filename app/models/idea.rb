@@ -17,7 +17,8 @@ class Idea < ApplicationRecord
       {
         id: idea.id,
         category: idea.category.name,
-        body: idea.body
+        body: idea.body,
+        created_at: idea.created_at
       }
     end
   end
