@@ -1,25 +1,12 @@
-# README
+# 環境
+rails 6.0.2  
+ruby 2.6.3  
+sqlite  
+gem  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## エンドポイント
+|content|HTTP|endpoint|controller|
+|---|---|---|---|
+|アイデア登録|POST|/api/v1/ideas|api/ideas#create|
+|アイデア取得|GET|/api//v1/ideas|api/ideas#index|
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Medpeer_task
